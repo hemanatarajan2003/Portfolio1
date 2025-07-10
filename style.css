@@ -1,0 +1,98 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --accent-color: #0077ff;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --accent-color: #00bfff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
+
+header {
+  background: var(--accent-color);
+  color: #fff;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#hero {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+#hero span {
+  color: var(--accent-color);
+}
+
+section {
+  padding: 3rem 1rem;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.project-card {
+  flex: 1 1 45%;
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+body.dark .project-card {
+  background: #1e1e1e;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
